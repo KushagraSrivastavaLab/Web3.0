@@ -1,0 +1,33 @@
+.header{
+	display: flex;
+	height: 380px;
+	/* background-color: blue; */
+}
+.headerPara{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 50px;
+}
+.headerTitle{
+	font-size: 35px;
+	color: blue;
+	padding: 0 0 15px 0;
+}
+.headerImage{
+	height: inherit;
+	clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%);
+}
+@media screen and (max-width: 999px) {
+	.header{
+		height: auto;
+	}
+	.headerPara{
+		display: block;
+		padding: 30px 50px 0 50px ;
+	}
+	.headerImage{
+		display: none;
+	}
+}

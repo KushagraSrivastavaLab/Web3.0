@@ -1,0 +1,24 @@
+footer{
+	border-top: 1px solid grey;
+	padding: 20px;
+	display: flex;
+}
+.footerFollow{
+	font-size: 25px;
+	font-weight: 700;
+	color: rgb(78, 78, 77);
+}
+.footerFollow:hover{
+	color: black;
+}
+.footerImgs{
+	flex: 1 0 auto;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+.footerImgs > svg{
+	height: 25px;
+	padding: 0 10px;
+	cursor: pointer;
+}

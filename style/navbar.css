@@ -1,0 +1,92 @@
+.navBar{
+	display: flex;
+	position: sticky;
+}
+.navJoint{
+	display: flex;
+	flex: 1 auto;
+}
+.navButtons{
+	flex: 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 15px;
+}
+.navButtons > span{
+	padding: 0 10px;
+}
+.navTitle{
+	font-family: 'Lobster', cursive;
+	font-size: 22px;
+}
+.navHov:hover{
+	color: rgb(0, 0, 0);
+	background-color: blueviolet;
+}
+#lightImage{
+	display: none;
+}
+#menuImage, #closeImage{	
+	display: none;
+}
+#darkImage:hover, #lightImage:hover{
+	transition: 0.9s ease-in-out;
+	transform: rotate(270deg);
+}
+#navLinks{
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	/* flex: 1 0 auto; */
+	align-items: flex-end;
+	justify-content: flex-end;
+	transition: 0.3s ease-in-out;
+}
+.navLink, .a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 105px;
+	font-size: 19px;
+	text-decoration: none;
+	color: inherit;
+}
+.navButtons > span{
+	cursor: pointer;
+}
+.a{
+	text-decoration: none;
+}
+/* utilities of the nav Tag  */
+.colGrey{
+	color: rgb(88, 88, 88);
+}
+.bBottom{
+	border-bottom: 1px solid rgb(88, 88, 88);
+}
+.pad_20_15{
+	padding: 20px 15px;
+}
+.added{
+	display: flex;
+}
+@media screen and (max-width: 900px) {
+	.navBar{
+		display: block;
+	}
+	#navLinks{
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 0 10px 0;
+	}
+	.navLink{
+		padding: 8px 15px;
+	}
+	.navButtons{
+		display: flex;
+	}
+	#menuImage{
+		display: inline;
+	}
+}
